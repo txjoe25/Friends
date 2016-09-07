@@ -1,0 +1,5 @@
+Required Features
+♦ Display of friends with edit/show/delete buttons for each Friend.
+♦ Display birthday filter on index of friends page.
+♦ Edit page will have the ability to edit any content of a particular friend.
+♦ Show page will show all content of a particular friend with a link to edit that same friend.

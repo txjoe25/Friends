@@ -1,0 +1,19 @@
+<h1>Index</h1>
+<table>
+	<input type="text" ng-model="bfilter" placeholder="Birthday Filter">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="friend in friends | filter:{birthday: bfilter}">
+			<th> {{friend.name}}</th>
+			<th> <a href="/#/edit/{{friend._id}}">Edit</a></th>
+			<th> <a href="/#/show/{{friend._id}}">Show</a></th>
+		<!-- 	<th> <a href="/#/show/{{$index}}">Current</a></th> -->
+			<th> <a ng-click='delete(friend._id)' href="/#/">Delete</a></th>
+		</tr>
+	</tbody>
+</table>

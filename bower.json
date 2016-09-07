@@ -1,0 +1,22 @@
+{
+  "name": "Full_MEAN",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Joe <txjoe75@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.7",
+    "angular": "^1.5.7",
+    "moment": "^2.14.1"
+  }
+}

@@ -1,0 +1,19 @@
+<h1>Edit</h1>
+<form name='myForm' ng-submit='update(friend._id)' novalidate>
+	<input type="text" name="name" ng-model='friendUpdated.name' minlength='2'>
+	<input type="date" name="date" ng-model='friendUpdated.date' required max='{{min_year}}' >
+	<input type="submit" name="submit" value="Update Friend">
+
+</form>
+<form ng-submit='delete(friend._id)'>
+	<input type="submit" value="Delete Friend">
+</form>
+<div ng-messages='myForm.name.$error' role='alert' ng-show='myForm.$submitted'>
+		<div ng-message='required'>Enter a name</div>
+		<div ng-message='minlength'>Your name must be longer, SHAWTEE</div>
+	</div>
+	<div ng-messages='myForm.date.$error' role='alert' ng-show='myForm.$submitted'>
+
+		<div ng-message='required'>Enter your birthday</div>
+		<div ng-message='max'>Grow a Pair!</div>
+	</div>

@@ -1,0 +1,15 @@
+<h1>New</h1>
+<form name='myForm' ng-submit='create()' novalidate>
+	<input type="text" required name="name" minlength='2' ng-model="newFriend.name">
+	<input type="Date" name="birthday" ng-model='newFriend.birthday' required max='{{min_year}}' >
+	<input type="submit" name="submit" value="Create Friend">
+	<div ng-messages='myForm.name.$error' role='alert' ng-show='myForm.$submitted'>
+		<div ng-message='required'>Enter a name</div>
+		<div ng-message='minlength'>Your name must be longer, SHAWTEE</div>
+	</div>
+	<div ng-messages='myForm.birthday.$error' role='alert' ng-show='myForm.$submitted'>
+
+		<div ng-message='required'>Enter your birthday</div>
+		<div ng-message='max'>Grow a Pair!</div>
+	</div>
+</form>
